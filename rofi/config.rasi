@@ -1,0 +1,63 @@
+configuration {
+    show-icons: true; /* Enable icons in the menu */
+    icon-theme: "Papirus"; /* Optional: Set your icon theme (ensure it's installed) */
+    display-drun: "Apps"; /* Label for the application launcher */
+    display-run: "Run"; /* Label for the run dialog */
+    drun-display-format: "{name}"; /* Format for application names */
+    modi: "drun,run,window"; /* Available modes */
+    font: "JetBrains Mono 15"; /* Default font, doubled from typical 12 */
+    lines: 17;
+}
+
+/* Theme settings embedded in config.rasi */
+* {
+    background-color: #000000; /* Dark background */
+    text-color: #FFFFFF; /* White text */
+    border-color: #000000; /* Border color */
+    selected-background: #000000; /* Highlight color for selected items */
+    selected-text-color: #FFFFFF; /* Text color for selected items */
+}
+
+window {
+    width: 450px; /* Doubled from typical 700px */
+    height: 450px; /* Doubled from typical 450px */
+    padding: 10px; /* Doubled from typical 10px */
+    border: 2px; /* Optional: Border thickness */
+    border-color: @border-color;
+}
+
+mainbox {
+    padding: 5px; /* Doubled padding */
+}
+
+inputbar {
+    padding: 5px; /* Doubled from typical 8px */
+    font: "JetBrains Mono 14"; /* Slightly larger for input bar */
+    background-color: @background-color;
+    text-color: @text-color;
+}
+
+listview {
+    spacing: 5px; /* Doubled from typical 5px */
+    padding: 5px; /* Doubled padding */
+    scrollbar: false; /* Disable scrollbar for cleaner look */
+}
+
+element {
+    padding: 5px; /* Doubled from typical 8px */
+    font: "JetBrains Mono 14"; /* Match default font */
+    background-color: @background-color;
+    text-color: @text-color;
+}
+
+element selected {
+    background-color: @selected-background;
+    text-color: @selected-text-color;
+}
+//@theme "/nix/store/g38qhanmfnvjzssznhs3s4w8bm9654yd-rofi-1.7.5/share/rofi/themes/Arc-Dark.rasi"
+
+//@theme "/nix/store/xgsf8b02cgxg01niql5g1dj19mj253v2-rofi-1.7.5+wayland3/share/rofi/themes/arthur.rasi"
+
+//@theme "/nix/store/xgsf8b02cgxg01niql5g1dj19mj253v2-rofi-1.7.5+wayland3/share/rofi/themes/gruvbox-dark-hard.rasi"
+
+@theme "/nix/store/xgsf8b02cgxg01niql5g1dj19mj253v2-rofi-1.7.5+wayland3/share/rofi/themes/arthur.rasi"
